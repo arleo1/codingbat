@@ -18,6 +18,7 @@ def common_end(a, b):
         print(True)
         
 //Given an array of ints length 3, print the sum of all the elements.
+//2 solutions:
 def sum3(nums):
     total=0
     for i in nums:
@@ -26,3 +27,32 @@ def sum3(nums):
     
 def sum3(nums):
     print(sum(nums)
+      
+//Given an array of ints length 3, print an array with the elements "rotated left" so {1, 2, 3} yields {2, 3, 1}
+def rotate_left3(nums):
+    temp=0
+    temp=nums[0]
+    nums.pop(0)
+    nums.append(temp)
+    print(nums)
+
+def rotate_left3(nums):
+    print(nums[1], nums[2], nums[0])
+    
+//Given an array of ints length 3, print a new array with the elements in reverse order, so {1, 2, 3} becomes {3, 2, 1}.
+def reverse3(nums):
+    nums.reverse()
+    print(nums)
+
+def reverse3(nums):
+    print(nums[2],nums[1],nums[0])
+    
+//Given an array of ints length 3, figure out which is larger, the first or last element in the array, 
+//and set all the other elements to be that value. Print the changed array.
+def max_end3(nums):
+    nums.sort()
+    a=nums[-1]
+    list=[]
+    for i in range(len(nums)):
+        list.append(a)
+    print(list)
