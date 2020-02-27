@@ -61,3 +61,24 @@ def sorta_sum(a, b):
 # print a string of the form "7:00" indicating when the alarm clock should ring. 
 # Weekdays, the alarm should be "7:00" and on the weekend it should be "10:00". 
 # Unless we are on vacation -- then on weekdays it should be "10:00" and weekends it should be "off".
+def alarm_clock(day, vacation):
+    if (day >=1 and day<=5) and vacation==False:
+        print('7:00')
+    elif (day==0 or day==6) and vacation==False:
+        print('10:00')
+    elif (day >=1 and day<=5) and vacation==True:
+        print('10:00')
+    elif (day==0 and day==6) and vacation==True:
+        print('off')
+        
+# The number 6 is a truly great number. Given two int values, a and b, print True if either one is 6. 
+# Or if their sum or difference is 6.
+def love6(a, b):
+    if (a==6 or b==6) or (a+b)==6 or (a-b)==6:
+        print(True)
+        
+# Given a number n, print True if n is in the range 1..10, inclusive. 
+# Unless outside_mode is True, in which case print True if the number is less or equal to 1, or greater or equal to 10.
+def in1to10(n, outside_mode):
+    if (n >=1 and n<=10) or (outside_mode==True and (n<=1 or n>=10)):
+        print(True)
