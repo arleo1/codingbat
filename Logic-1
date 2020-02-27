@@ -82,3 +82,9 @@ def love6(a, b):
 def in1to10(n, outside_mode):
     if (n >=1 and n<=10) or (outside_mode==True and (n<=1 or n>=10)):
         print(True)
+
+
+# Given a non-negative number "num", print True if num is within 2 of a multiple of 10. 
+def near_ten(num):
+    if num%10 <=2 or num%10>=8:
+        print(True)
