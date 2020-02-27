@@ -10,3 +10,19 @@ def same_first_last(nums):
      
 //Print an int array length 3 containing the first 3 digits of pi, {3, 1, 4}.
 print([3,1,4])
+
+//Given 2 arrays of ints, a and b, print True if they have the same first element or they have the same last element. 
+//Both arrays will be length 1 or more.
+def common_end(a, b):
+    if a[0] == b[0] or a[-1] == b[-1]:
+        print(True)
+        
+//Given an array of ints length 3, print the sum of all the elements.
+def sum3(nums):
+    total=0
+    for i in nums:
+        total+=i
+    print(total)
+    
+def sum3(nums):
+    print(sum(nums)
