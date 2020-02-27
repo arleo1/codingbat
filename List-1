@@ -1,24 +1,23 @@
-//Given an array of ints, print True if 6 appears as either the first or last element in the array. The array will be length 1 or more.
+# Given an array of ints, print True if 6 appears as either the first or last element in the array. The array will be length 1 or more.
 def first_last6(nums):
     if nums[0]==6 or nums[-1]==6:
         print(True)
        
-//Given an array of ints, print True if the array is length 1 or more, and the first element and the last element are equal.
+# Given an array of ints, print True if the array is length 1 or more, and the first element and the last element are equal.
 def same_first_last(nums):
     if len(nums)>=1 and (nums[0]==nums[-1]):
         print(True)
      
-//Print an int array length 3 containing the first 3 digits of pi, {3, 1, 4}.
+# Print an int array length 3 containing the first 3 digits of pi, {3, 1, 4}.
 print([3,1,4])
 
-//Given 2 arrays of ints, a and b, print True if they have the same first element or they have the same last element. 
-//Both arrays will be length 1 or more.
+# Given 2 arrays of ints, a and b, print True if they have the same first element or they have the same last element. 
+# Both arrays will be length 1 or more.
 def common_end(a, b):
     if a[0] == b[0] or a[-1] == b[-1]:
         print(True)
         
-//Given an array of ints length 3, print the sum of all the elements.
-//2 solutions:
+# Given an array of ints length 3, print the sum of all the elements.
 def sum3(nums):
     total=0
     for i in nums:
@@ -28,7 +27,7 @@ def sum3(nums):
 def sum3(nums):
     print(sum(nums)
       
-//Given an array of ints length 3, print an array with the elements "rotated left" so {1, 2, 3} yields {2, 3, 1}
+# Given an array of ints length 3, print an array with the elements "rotated left" so {1, 2, 3} yields {2, 3, 1}
 def rotate_left3(nums):
     temp=0
     temp=nums[0]
@@ -39,7 +38,7 @@ def rotate_left3(nums):
 def rotate_left3(nums):
     print(nums[1], nums[2], nums[0])
     
-//Given an array of ints length 3, print a new array with the elements in reverse order, so {1, 2, 3} becomes {3, 2, 1}.
+# Given an array of ints length 3, print a new array with the elements in reverse order, so {1, 2, 3} becomes {3, 2, 1}.
 def reverse3(nums):
     nums.reverse()
     print(nums)
@@ -47,8 +46,8 @@ def reverse3(nums):
 def reverse3(nums):
     print(nums[2],nums[1],nums[0])
     
-//Given an array of ints length 3, figure out which is larger, the first or last element in the array, 
-//and set all the other elements to be that value. Print the changed array.
+# Given an array of ints length 3, figure out which is larger, the first or last element in the array, 
+# and set all the other elements to be that value. Print the changed array.
 def max_end3(nums):
     nums.sort()
     a=nums[-1]
@@ -56,3 +55,6 @@ def max_end3(nums):
     for i in range(len(nums)):
         list.append(a)
     print(list)
+
+// Given an array of ints, print the sum of the first 2 elements in the array. 
+// If the array length is less than 2, just sum up the elements that exist, returning 0 if the array is length 0.
