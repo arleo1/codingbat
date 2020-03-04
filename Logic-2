@@ -2,6 +2,12 @@
 # We have a number of small bricks (1 inch each) and big bricks (5 inches each). 
 # Print True if it is possible to make the goal by choosing from the given bricks. 
 # This is a little harder than it looks and can be done without any loops.
+def make_bricks(small, big, goal):
+    if goal>= 5*big:
+        x = goal - (5*big)
+    else:
+        x = goal%5
+    print(small>=x)
 
 # Given 3 int values, a b c, print their sum. 
 # However, if one of the values is 13 then it does not count towards the sum and values to its right do not count. 
