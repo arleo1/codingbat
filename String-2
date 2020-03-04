@@ -26,3 +26,26 @@ def count_code(str):
         if str[i] == 'c' and str[i+1] == 'o' and str[i+3] == 'e':
             total+=1
     print(total)
+
+# Given two strings, print True if either of the strings appears at the very end of the other string, 
+# ignoring upper/lower case differences (in other words, the computation should not be "case sensitive"). 
+
+def end_other(a, b):
+    x= a.lower()
+    y= b.lower()
+    if len(x)>=len(y):
+        if y in x:
+            print(True)
+    else:
+        if x in y:
+            print(True)
+      
+# Print True if the given string contains an appearance of "xyz" where the xyz is not directly preceeded by a period (.).
+# So "xxyz" counts but "x.xyz" does not.     
+
+def xyz_there(str):
+    if str.count("xyz"):
+        if str.count(".xyz"):
+            print(False)
+        else:
+            print(True)
