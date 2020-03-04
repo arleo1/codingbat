@@ -1,0 +1,28 @@
+# Given a string, print a string where for every char in the original, there are two chars.
+
+def double_char(str):
+    new = ""
+    for i in str:
+        new += i*2
+    print(new)
+
+# Print the number of times that the string "hi" appears anywhere in the given string.
+
+def count_hi(str):
+    print(str.count("hi"))
+    
+# Print True if the string "cat" and "dog" appear the same number of times in the given string.
+
+def cat_dog(str):
+    if str.count("cat")==str.count("dog"):
+        print(True)
+
+# Print the number of times that the string "code" appears anywhere in the given string, 
+# except we'll accept any letter for the 'd', so "cope" and "cooe" count.
+
+def count_code(str):
+    total = 0
+    for i in range(len(str)):
+        if str[i] == 'c' and str[i+1] == 'o' and str[i+3] == 'e':
+            total+=1
+    print(total)
