@@ -1,2 +1,3 @@
 # codingbat
-My answers to the python codingbat problems
+My Python solutions to the codingbat problems.
+https://codingbat.com/python
